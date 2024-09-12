@@ -87,7 +87,8 @@ export const Roulette = ({ amountItems, items, duration }) => {
       <div className="overflow-hidden ">
         <ul
           ref={listRef}
-          className={`inline-flex gap-[10px] transition duration-[${duration}ms]`}
+          className={`inline-flex gap-[10px] transition`}
+          style={{ transitionDuration: `${duration}ms` }}
         >
           {data.map((el, i) => {
             return (
